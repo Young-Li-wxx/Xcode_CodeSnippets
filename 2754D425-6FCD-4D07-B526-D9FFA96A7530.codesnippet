@@ -3,19 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>lyTimeMark</string>
+	<string>lyPrintSystemFonts</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/**  (2016)ly.&lt;#month#&gt;.&lt;#today#&gt; : &lt;#brief#&gt;  */</string>
+	<string>//    获取字体族的名字数组
+NSArray *arr = [UIFont familyNames];
+for (NSString *family in arr) {
+    // 打印字体族名
+    NSLog(@"familyName = %@", family);
+    NSArray *arr2 = [UIFont fontNamesForFamilyName:family];
+    for (NSString *name in arr2) {
+        // 打印字体名
+        NSLog(@"fontName = %@", name);
+    }
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>7835E610-10DD-4E5A-AC50-A8CED490737E</string>
+	<string>2754D425-6FCD-4D07-B526-D9FFA96A7530</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>lyTimeMark</string>
+	<string>打印所有系统字体</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
