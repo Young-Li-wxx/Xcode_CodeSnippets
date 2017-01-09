@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// TODO &lt;#mark#&gt; at &lt;&lt;#month#&gt;.&lt;#today#&gt;&gt;</string>
+	<string>// TODO: &lt;#mark#&gt; at &lt;&lt;#month#&gt;.&lt;#today#&gt;&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>56DB6AD5-D52D-4D84-B769-A036B4D40229</string>
 	<key>IDECodeSnippetLanguage</key>
