@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>lymakeBtn</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIButton *&lt;#btn#&gt; = [UIButton buttonWithType:UIButtonTypeCustom];
+        &lt;#btn#&gt;.frame = CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;);
+        &lt;#btn#&gt;.backgroundColor = &lt;#color#&gt;;
+        &lt;#btn#&gt;.imageView.contentMode = UIViewContentModeScaleAspectFit;
+        [&lt;#btn#&gt; setImage:[UIImage imageNamed:&lt;#(nonnull NSString *)#&gt;] forState:UIControlStateNormal];
+        [&lt;#btn#&gt; setImage:[UIImage imageNamed:&lt;#(nonnull NSString *)#&gt;] forState:UIControlStateHighlighted];
+        &lt;#btn#&gt;.titleLabel.font = &lt;#font#&gt;;
+        [&lt;#btn#&gt; setTitle:&lt;#(nullable NSString *)#&gt; forState:UIControlStateNormal];
+        [&lt;#btn#&gt; setTitle:&lt;#(nullable NSString *)#&gt; forState:UIControlStateHighlighted];
+        [&lt;#btn#&gt; addTarget:self action:@selector(p_&lt;#btnOnClick#&gt;) forControlEvents:UIControlEventTouchUpInside];
+        [&lt;#view#&gt; addSubview:&lt;#btn#&gt;];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A512B9D2-8054-42B4-A80A-2D0EABFEE443</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>创建button</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
