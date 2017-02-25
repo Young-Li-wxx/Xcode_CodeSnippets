@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>swInitController</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> // MARK: view cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        self.view.backgroundColor = UIColor.green
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+    }
+
+    
+    
+    // MARK: - ********* Private Method
+    func p_setUpNav() {
+        self.navigationItem.title = "成都"
+        let navSpacer = UIBarButtonItem.init(barButtonSystemItem: UIBarButtonSystemItem.fixedSpace, target: self, action: #selector(p_actionLeft))
+        let left = UIButton.init(type: UIButtonType.custom)
+        left.frame = CGRect.init(x: 0, y: 0, width: 44, height: 44)
+        left.setImage(UIImage.init(named: ""), for: UIControlState.normal)
+        left.setImage(UIImage.init(named: ""), for: UIControlState.highlighted)
+        left.contentHorizontalAlignment = UIControlContentHorizontalAlignment.left
+        left.addTarget(self, action: #selector(p_actionLeft), for: UIControlEvents.touchUpInside)
+        let leftItem = UIBarButtonItem.init(customView: left)
+        self.navigationItem.leftBarButtonItems = [navSpacer,leftItem]
+        
+        let right = UIButton.init(type: UIButtonType.custom)
+        right.frame = CGRect.init(x: 0, y: 0, width: 44, height: 44)
+        right.setImage(UIImage.init(named: ""), for: UIControlState.normal)
+        right.setImage(UIImage.init(named: ""), for: UIControlState.highlighted)
+        right.contentHorizontalAlignment = UIControlContentHorizontalAlignment.left
+        right.addTarget(self, action: #selector(p_actionRight), for: UIControlEvents.touchUpInside)
+        let rightItem = UIBarButtonItem.init(customView: right)
+        self.navigationItem.rightBarButtonItem = rightItem
+        
+    }
+    // MARK: *** 点击左上角
+    func p_actionLeft() {
+        
+    }
+    // MARK: *** 点击右上角
+    func p_actionRight() {
+        
+    }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B649C365-E197-4010-86E6-CB0E50291E7C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>swift - 初始化controller</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
