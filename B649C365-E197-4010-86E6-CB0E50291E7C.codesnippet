@@ -12,8 +12,10 @@
 	<string> // MARK: view cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.view.backgroundColor = UIColor.green
+    self.automaticallyAdjustsScrollViewInsets = false
+        self.view.backgroundColor = UIColor.white
+        self.p_setUpNav()
+        self.p_initSubviews()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -29,7 +31,7 @@
     
     // MARK: - ********* Private Method
     func p_setUpNav() {
-        self.navigationItem.title = "成都"
+        self.navigationItem.title = ""
         let navSpacer = UIBarButtonItem.init(barButtonSystemItem: UIBarButtonSystemItem.fixedSpace, target: self, action: #selector(p_actionLeft))
         let left = UIButton.init(type: UIButtonType.custom)
         left.frame = CGRect.init(x: 0, y: 0, width: 44, height: 44)
@@ -56,6 +58,9 @@
     }
     // MARK: *** 点击右上角
     func p_actionRight() {
+        
+    }
+    func p_initSubviews() {
         
     }
 </string>
