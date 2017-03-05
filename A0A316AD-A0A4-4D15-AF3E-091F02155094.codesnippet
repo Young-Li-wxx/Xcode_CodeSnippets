@@ -3,19 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>todo</string>
+	<string>lydelegate</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// TODO: &lt;#mark#&gt; at &lt;(2017)&lt;#month#&gt;.&lt;#today#&gt;&gt;</string>
+	<string> if ([self.delegate respondsToSelector:@selector(&lt;#selector#&gt;)]) {
+        [self.delegate &lt;#selector#&gt;];
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>56DB6AD5-D52D-4D84-B769-A036B4D40229</string>
+	<string>A0A316AD-A0A4-4D15-AF3E-091F02155094</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>TODO</string>
+	<string>delegate respondsToSelector</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

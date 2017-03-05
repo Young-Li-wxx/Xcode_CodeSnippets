@@ -9,7 +9,9 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/**  (2016)ly.&lt;#month#&gt;.&lt;#today#&gt; : &lt;#brief#&gt;  */</string>
+	<string>/********  (2017)ly.&lt;#month#&gt;.&lt;#today#&gt; *********
+ &lt;#mark#&gt;
+ **************************/</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>7835E610-10DD-4E5A-AC50-A8CED490737E</string>
 	<key>IDECodeSnippetLanguage</key>
