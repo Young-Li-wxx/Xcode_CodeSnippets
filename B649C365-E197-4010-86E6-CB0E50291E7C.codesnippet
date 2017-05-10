@@ -32,22 +32,22 @@
     // MARK: - ********* Private Method
     func p_setUpNav() {
         self.navigationItem.title = ""
-        let navSpacer = UIBarButtonItem.init(barButtonSystemItem: UIBarButtonSystemItem.fixedSpace, target: self, action: #selector(p_actionLeft))
-        let left = UIButton.init(type: UIButtonType.custom)
+        let navSpacer = UIBarButtonItem.init(barButtonSystemItem: .fixedSpace, target: self, action: #selector(p_actionLeft))
+        let left = UIButton.init(type: .custom)
         left.frame = CGRect.init(x: 0, y: 0, width: 44, height: 44)
-        left.setImage(UIImage.init(named: ""), for: UIControlState.normal)
-        left.setImage(UIImage.init(named: ""), for: UIControlState.highlighted)
+        left.setImage(UIImage.init(named: ""), for: .normal)
+        left.setImage(UIImage.init(named: ""), for: .highlighted)
         left.contentHorizontalAlignment = UIControlContentHorizontalAlignment.left
-        left.addTarget(self, action: #selector(p_actionLeft), for: UIControlEvents.touchUpInside)
+        left.addTarget(self, action: #selector(p_actionLeft), for: .touchUpInside)
         let leftItem = UIBarButtonItem.init(customView: left)
         self.navigationItem.leftBarButtonItems = [navSpacer,leftItem]
         
-        let right = UIButton.init(type: UIButtonType.custom)
+        let right = UIButton.init(type: .custom)
         right.frame = CGRect.init(x: 0, y: 0, width: 44, height: 44)
-        right.setImage(UIImage.init(named: ""), for: UIControlState.normal)
-        right.setImage(UIImage.init(named: ""), for: UIControlState.highlighted)
-        right.contentHorizontalAlignment = UIControlContentHorizontalAlignment.left
-        right.addTarget(self, action: #selector(p_actionRight), for: UIControlEvents.touchUpInside)
+        right.setImage(UIImage.init(named: ""), for: .normal)
+        right.setImage(UIImage.init(named: ""), for: .highlighted)
+        right.contentHorizontalAlignment = .right
+        right.addTarget(self, action: #selector(p_actionRight), for: .touchUpInside)
         let rightItem = UIBarButtonItem.init(customView: right)
         self.navigationItem.rightBarButtonItem = rightItem
         
