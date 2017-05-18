@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>swFuncMark</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/// &lt;#desc1#&gt;
+    ///
+    /// - Parameter &lt;#param#&gt;: &lt;#paramDesc#&gt;
+    ///
+    /// - Parameter &lt;#param#&gt;: &lt;#paramDesc#&gt;
+    ///
+    /// - Returns: &lt;#returnDesc#&gt;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>91298DE0-3884-4834-B912-B0A865CE532E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>swift中的方法说明</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

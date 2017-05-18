@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>cellWithTableView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> static let CellReuseId = "&lt;#CellClass#&gt;"
+    class func cellWithTableView(_ tableView: UITableView) -&gt; &lt;#CellClass#&gt; {
+        
+        var cell = tableView.dequeueReusableCell(withIdentifier: CellReuseId)
+        if cell == nil {
+            cell = &lt;#CellClass#&gt;.init(style: .default, reuseIdentifier: CellReuseId)
+        }
+        return cell as! &lt;#CellClass#&gt;
+    }
+override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+
+    }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B97D7D0B-6547-45EA-AD13-981E492D8EB8</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>cell快速初始化</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
