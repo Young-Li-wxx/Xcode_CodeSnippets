@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>lyTableViewInit</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>tableView = UITableView.init(frame: CGRect.init(x: 0, y: headerView.bottom, width: kScreenWid(), height: kScreenHei() - headerView.bottom), style: .plain)
+        tableView.backgroundColor = UIColor.white
+        tableView.showsVerticalScrollIndicator = false
+        tableView.showsVerticalScrollIndicator = false
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.separatorStyle = .none
+        tableView.tableFooterView = UIView()
+        self.view.addSubview(tableView)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3C87B3DF-2F2C-4C66-ADA7-92B0AF6AAA66</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>tableView快速初始化</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
