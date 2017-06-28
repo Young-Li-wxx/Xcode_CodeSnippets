@@ -12,11 +12,10 @@
 	<string> static let CellReuseId = "&lt;#CellClass#&gt;"
     class func cellWithTableView(_ tableView: UITableView) -&gt; &lt;#CellClass#&gt; {
         
-        var cell = tableView.dequeueReusableCell(withIdentifier: CellReuseId)
-        if cell == nil {
-            cell = &lt;#CellClass#&gt;.init(style: .default, reuseIdentifier: CellReuseId)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: CellReuseId, for: indexPath) as? &lt;#CellClass#&gt; else {
+            return &lt;#CellClass#&gt;(style: .default, reuseIdentifier: CellReuseId)
         }
-        return cell as! &lt;#CellClass#&gt;
+        return cell
     }
 override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

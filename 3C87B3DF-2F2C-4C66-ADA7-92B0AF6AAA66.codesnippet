@@ -17,6 +17,7 @@
         tableView.dataSource = self
         tableView.separatorStyle = .none
         tableView.tableFooterView = UIView()
+tableView.register(&lt;#cellClass#&gt;.self, forCellReuseIdentifier: &lt;#cellClass#&gt;.CellReuseId)
         self.view.addSubview(tableView)</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>3C87B3DF-2F2C-4C66-ADA7-92B0AF6AAA66</string>
@@ -27,6 +28,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>
