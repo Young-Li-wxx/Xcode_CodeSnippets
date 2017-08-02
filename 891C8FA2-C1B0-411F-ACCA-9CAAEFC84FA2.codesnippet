@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>lyKeyBorad</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChangeFrame(noti:)), name: .UIKeyboardWillChangeFrame, object: nil)
+    NotificationCenter.default.removeObserver(self)
+    // MARK: - ********* 键盘监听
+    private var currentOffset = CGPoint.zero
+    func keyboardWillChangeFrame(noti: Notification) {
+        
+        let dict = noti.userInfo
+        let duration = dict?[UIKeyboardAnimationDurationUserInfoKey] as! TimeInterval
+        let keyBoardF = dict?[UIKeyboardFrameEndUserInfoKey] as! CGRect
+        if keyBoardF.origin.y &lt; kScreenHei() - 1 {
+            self.currentOffset = self.bgScrollView.contentOffset
+        }
+        UIView.animate(withDuration: duration) {
+            // 收起键盘
+            if keyBoardF.origin.y &gt; kScreenHei() - 1 {
+                self.bgScrollView.contentOffset = self.currentOffset
+            }
+            else {
+                let needOffset = keyBoardF.height - (self.bgScrollView.height - self.recordView.bottom)
+                self.bgScrollView.contentOffset = CGPoint.init(x: 0, y: needOffset)
+            }
+        }
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>891C8FA2-C1B0-411F-ACCA-9CAAEFC84FA2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>键盘监听</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

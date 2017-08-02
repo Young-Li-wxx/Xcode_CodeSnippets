@@ -3,19 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>zzz</string>
+	<string>headerWithTableView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>-&gt; </string>
+	<string>static let HeaderReuseId = "&lt;#headerClass#&gt;"
+    class func headerViewWithTableView(_ tableView: UITableView) -&gt; &lt;#headerClass#&gt; {
+        let view = tableView.dequeueReusableHeaderFooterView(withIdentifier:HeaderReuseId) as? &lt;#headerClass#&gt;
+        return view ?? &lt;#headerClass#&gt;.init(reuseIdentifier: HeaderReuseId)
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>FE73796D-6231-4EBA-9F22-72C7C1BA9259</string>
+	<string>4D5313E8-33CE-4583-8DCA-3B5E9388357B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>swift 的  -&gt;</string>
+	<string>tableHeaderView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

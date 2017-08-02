@@ -10,7 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string> static let CellReuseId = "&lt;#CellClass#&gt;"
-    class func cellWithTableView(_ tableView: UITableView) -&gt; &lt;#CellClass#&gt; {
+    class func cellWithTableView(_ tableView: UITableView, indexPath: IndexPath) -&gt; &lt;#CellClass#&gt; {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CellReuseId, for: indexPath) as? &lt;#CellClass#&gt; else {
             return &lt;#CellClass#&gt;(style: .default, reuseIdentifier: CellReuseId)

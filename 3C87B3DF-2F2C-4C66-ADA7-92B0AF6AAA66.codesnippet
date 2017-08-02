@@ -9,9 +9,9 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>tableView = UITableView.init(frame: CGRect.init(x: 0, y: headerView.bottom, width: kScreenWid(), height: kScreenHei() - headerView.bottom), style: .plain)
+	<string>tableView = UITableView.init(frame: CGRect.init(x: 0, y: 64, width: kScreenWid(), height: kScreenHei() - 64), style: .plain)
         tableView.backgroundColor = UIColor.white
-        tableView.showsVerticalScrollIndicator = false
+        showsHorizontalScrollIndicator = false
         tableView.showsVerticalScrollIndicator = false
         tableView.delegate = self
         tableView.dataSource = self

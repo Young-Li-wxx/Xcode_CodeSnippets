@@ -3,19 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>zzz</string>
+	<string>lyaddline</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>-&gt; </string>
+	<string>let line = UIView.init(frame: CGRect.init(x: &lt;#T##CGFloat#&gt;, y: &lt;#T##CGFloat#&gt;, width: &lt;#T##CGFloat#&gt;, height: &lt;#T##CGFloat#&gt;))
+        line.backgroundColor = kSeparateLineColor()
+        &lt;#superView#&gt;.addSubview(line)</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>FE73796D-6231-4EBA-9F22-72C7C1BA9259</string>
+	<string>7C850C8A-75FA-4B35-A8FA-DF8BF8092ABC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>swift 的  -&gt;</string>
+	<string>添加一条线</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

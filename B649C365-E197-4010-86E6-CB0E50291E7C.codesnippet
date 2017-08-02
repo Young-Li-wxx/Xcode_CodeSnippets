@@ -16,6 +16,7 @@
         self.view.backgroundColor = UIColor.white
         self.p_setUpNav()
         self.p_initSubviews()
+        self.p_startNetWorkRequest()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -28,7 +29,18 @@
     }
 
     
-    
+    // MARK: - ********* 网络数据
+    // MARK: === 网络响应
+    override func lyNetworkReponseSucceed(urlStr: String, result:
+        Dictionary&lt;String, Any&gt;?) {
+    }
+    override func lyNetworkReponseIncorrectParam(urlStr: String, message: String?) {
+        
+    }
+    // MARK: === 网络请求
+    func p_startNetWorkRequest() {
+
+    }
     // MARK: - ********* Private Method
     func p_setUpNav() {
         self.navigationItem.title = ""
@@ -52,11 +64,11 @@
         self.navigationItem.rightBarButtonItem = rightItem
         
     }
-    // MARK: *** 点击左上角
+    // MARK: === 点击左上角
     func p_actionLeft() {
         
     }
-    // MARK: *** 点击右上角
+    // MARK: === 点击右上角
     func p_actionRight() {
         
     }

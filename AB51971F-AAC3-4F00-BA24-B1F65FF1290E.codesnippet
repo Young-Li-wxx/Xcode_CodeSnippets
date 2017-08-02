@@ -54,11 +54,11 @@
     UIBarButtonItem *editItem = [[UIBarButtonItem alloc] initWithCustomView:edit];
     self.navigationItem.rightBarButtonItem = editItem;
 }
-#pragma mark   **** 左上角 back
+#pragma mark   === 左上角 back
 - (void)p_actionBack {
     [self.navigationController popViewControllerAnimated:YES];
 }
-#pragma mark   **** 右上角 edit
+#pragma mark   === 右上角 edit
 - (void)p_editBtnOnClick {
     
 }</string>
