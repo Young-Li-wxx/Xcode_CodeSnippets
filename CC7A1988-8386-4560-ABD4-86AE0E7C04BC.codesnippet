@@ -9,7 +9,7 @@
 		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>&lt;#Class#&gt;.init(frame: CGRect.init(x: &lt;#T##CGFloat#&gt;, y: &lt;#T##CGFloat#&gt;, width: &lt;#T##CGFloat#&gt;, height: &lt;#T##CGFloat#&gt;))</string>
+	<string>&lt;#Class#&gt;(frame: CGRect(x: &lt;#T##CGFloat#&gt;, y: &lt;#T##CGFloat#&gt;, width: &lt;#T##CGFloat#&gt;, height: &lt;#T##CGFloat#&gt;))</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>CC7A1988-8386-4560-ABD4-86AE0E7C04BC</string>
 	<key>IDECodeSnippetLanguage</key>

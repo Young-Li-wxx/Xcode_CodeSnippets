@@ -12,7 +12,6 @@
 	<string>// MARK: view cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.p_setUpNav()
         self.p_initSubviews()
         self.p_startNetWorkRequest()
     }
@@ -30,7 +29,7 @@
 }
 
 // MARK: - ********* UIResponse Funcs
-extension TEFunTimeVC {
+extension &lt;#ClassName#&gt; {
     // MARK: === 点击左上角
     @objc fileprivate func p_actionLeft() {
         
@@ -42,8 +41,8 @@ extension TEFunTimeVC {
 }
 
 // MARK: - ********* UI init
-extension TEFunTimeVC {
-    fileprivate func p_setUpNav() {
+extension &lt;#ClassName#&gt; {
+    private func p_setUpNav() {
         self.navigationItem.title = ""
         
         let navSpacer = UIBarButtonItem.init(barButtonSystemItem: .fixedSpace, target: self, action: #selector(p_actionLeft))
@@ -66,7 +65,7 @@ extension TEFunTimeVC {
         self.navigationItem.rightBarButtonItem = rightItem
     }
     fileprivate func p_initSubviews() {
-        
+        p_setUpNav()
     }
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
@@ -74,10 +73,10 @@ extension TEFunTimeVC {
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string> 初始化controller</string>
+	<string>controller  初始化</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>

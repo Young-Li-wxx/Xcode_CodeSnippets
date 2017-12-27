@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>swModelInit</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>class &lt;#modelName#&gt;: LYBaseModel {
+
+var data = []()
+private var callBack: (([]) -&gt; Void)?
+
+// MARK: - ********* request and response
+// MARK: === data request
+func getData(_ callBack: @escaping ([]) -&gt; Void) {
+    self.callBack = callBack
+}
+// MARK: === data response
+override func ly_netReponseSuccess(target: LYNetProviderResponseProtocol.Target, result: [String : Any]?) {
+    
+}
+}
+
+
+// MARK: - ********* vc methods
+extension &lt;#modelName#&gt; {
+func vc_method() {
+    
+}
+}
+
+
+// MARK: - ********* model data
+@objcMembers
+class &lt;#modelData#&gt;: NSObject {
+
+/// aaa
+var aaa = ""
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0A43EAE1-EE67-437E-90C4-8261A9A0C5EF</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Model 初始化</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
