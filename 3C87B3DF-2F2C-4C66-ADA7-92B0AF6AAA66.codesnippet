@@ -10,21 +10,23 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>tableView = UITableView.init(frame: CGRect.init(x: 0, y: kNavBottom(), width: kScreenWid(), height: kScreenHei() - kNavBottom()), style: .plain)
-        tableView.backgroundColor = kBgColorF4()
-        tableView.showsHorizontalScrollIndicator = false
-        tableView.showsVerticalScrollIndicator = false
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.separatorStyle = .none
-        tableView.tableFooterView = UIView()
-tableView.register(&lt;#cellClass#&gt;.self, forCellReuseIdentifier: &lt;#cellClass#&gt;.CellReuseId)
-        self.view.addSubview(tableView)</string>
+        tableView.do {
+            $0.backgroundColor = kBgColorF4()
+            $0.showsHorizontalScrollIndicator = false
+            $0.showsVerticalScrollIndicator = false
+            $0.delegate = self
+            $0.dataSource = self
+            $0.separatorStyle = .none
+            $0.tableFooterView = UIView()
+            $0.register(&lt;#cellClass#&gt;.self, forCellReuseIdentifier: &lt;#cellClass#&gt;.CellReuseId)
+            self.view.addSubview($0)
+        }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>3C87B3DF-2F2C-4C66-ADA7-92B0AF6AAA66</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>tableView快速初始化</string>
+	<string>UITableView 快速初始化</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

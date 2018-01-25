@@ -3,38 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>swModelInit</string>
+	<string>lywithSugar</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>class &lt;#modelName#&gt;: TKNetBaseModel {
-
-var data = []()
-private var callBack: (([]) -&gt; Void)?
-
-}
-
-// MARK: - ********* request and response
-extension &lt;#modelName#&gt; {
-
-}
-
-
-// MARK: - ********* model data
-@objcMembers
-class &lt;#modelData#&gt;: NSObject {
-
-/// aaa
-var aaa = ""
-}</string>
+	<string>&lt;#new#&gt; = &lt;#old#&gt;.with {
+            $0.&lt;#property#&gt; = &lt;#value#&gt;
+            $0.&lt;#property#&gt; = &lt;#value#&gt;
+        }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>0A43EAE1-EE67-437E-90C4-8261A9A0C5EF</string>
+	<string>763B3865-A942-4349-B4AD-81929CED5DEB</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Model 初始化</string>
+	<string>with syntactic sugar</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

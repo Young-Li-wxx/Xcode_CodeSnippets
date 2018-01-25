@@ -3,38 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>swModelInit</string>
+	<string>lyLabelInit</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>class &lt;#modelName#&gt;: TKNetBaseModel {
-
-var data = []()
-private var callBack: (([]) -&gt; Void)?
-
-}
-
-// MARK: - ********* request and response
-extension &lt;#modelName#&gt; {
-
-}
-
-
-// MARK: - ********* model data
-@objcMembers
-class &lt;#modelData#&gt;: NSObject {
-
-/// aaa
-var aaa = ""
-}</string>
+	<string>&lt;#object#&gt; = UILabel().then {
+            $0.frame = CGRect(x: &lt;#T##CGFloat#&gt;, y: &lt;#T##CGFloat#&gt;, width: &lt;#T##CGFloat#&gt;, height: &lt;#T##CGFloat#&gt;)
+            $0.backgroundColor = UIColor.white
+            $0.textAlignment = .left
+            $0.textColor = &lt;#value#&gt;
+            $0.font = &lt;#value#&gt;
+            $0.text = &lt;#value#&gt;
+            self.addSubview($0)
+        }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>0A43EAE1-EE67-437E-90C4-8261A9A0C5EF</string>
+	<string>9B7B9C0E-7933-41D9-86FA-F42D8F98482C</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Model 初始化</string>
+	<string>UILabel 快速初始化</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>lyTextFieldInit</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>&lt;#object#&gt; = UITextField().then {
+            $0.frame = CGRect(x: &lt;#T##CGFloat#&gt;, y: &lt;#T##CGFloat#&gt;, width: &lt;#T##CGFloat#&gt;, height: &lt;#T##CGFloat#&gt;)
+            $0.backgroundColor = UIColor.white
+            $0.textAlignment = .right
+            $0.borderStyle = .none
+            $0.font = &lt;#value#&gt;
+            $0.textColor = &lt;#value#&gt;
+            $0.tintColor = &lt;#value#&gt;
+            $0.delegate = self
+            $0.attributedPlaceholder = "&lt;#value#&gt;".ly_AttributeStr(font: &lt;#font#&gt;, color: &lt;#color#&gt;)
+            self.addSubview($0)
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F2CEDC4E-8299-4EBC-908C-B1182670BDB9</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UITextField 快速初始化</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

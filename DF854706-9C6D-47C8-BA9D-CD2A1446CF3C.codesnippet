@@ -3,38 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>swModelInit</string>
+	<string>lyImageViewInit</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>class &lt;#modelName#&gt;: TKNetBaseModel {
-
-var data = []()
-private var callBack: (([]) -&gt; Void)?
-
-}
-
-// MARK: - ********* request and response
-extension &lt;#modelName#&gt; {
-
-}
-
-
-// MARK: - ********* model data
-@objcMembers
-class &lt;#modelData#&gt;: NSObject {
-
-/// aaa
-var aaa = ""
-}</string>
+	<string>&lt;#object#&gt; = UIImageView().then {
+            $0.frame = CGRect(x: &lt;#T##CGFloat#&gt;, y: &lt;#T##CGFloat#&gt;, width: &lt;#T##CGFloat#&gt;, height: &lt;#T##CGFloat#&gt;)
+            $0.backgroundColor = UIColor.white
+            $0.contentMode = .center
+            self.addSubview($0)
+        }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>0A43EAE1-EE67-437E-90C4-8261A9A0C5EF</string>
+	<string>DF854706-9C6D-47C8-BA9D-CD2A1446CF3C</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Model 初始化</string>
+	<string>UIImageView 快速初始化</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

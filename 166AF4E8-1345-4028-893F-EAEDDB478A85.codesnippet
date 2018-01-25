@@ -22,12 +22,14 @@
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
     }
-    // MARK: === 数据请求
-    func p_startNetWorkRequest() {
-    
-    }
 }
-
+// MARK: - ********* Network
+extension &lt;#Class#&gt; {
+// MARK: === 数据请求
+fileprivate func p_startNetWorkRequest() {
+    
+}
+}
 // MARK: - ********* UIResponse Funcs
 extension &lt;#ClassName#&gt; {
     // MARK: === 点击左上角
