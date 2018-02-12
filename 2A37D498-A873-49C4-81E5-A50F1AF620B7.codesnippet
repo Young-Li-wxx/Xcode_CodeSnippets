@@ -20,7 +20,8 @@
             $0.setTitleColor(&lt;#T##color: UIColor?##UIColor?#&gt;, for: .highlighted)
             $0.setTitle(&lt;#T##title: String?##String?#&gt;, for: .normal)
             $0.addTarget(self, action: #selector(&lt;#selector#&gt;), for: .touchUpInside)
-            self.addSubview($0)</string>
+            self.addSubview($0)
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>2A37D498-A873-49C4-81E5-A50F1AF620B7</string>
 	<key>IDECodeSnippetLanguage</key>
