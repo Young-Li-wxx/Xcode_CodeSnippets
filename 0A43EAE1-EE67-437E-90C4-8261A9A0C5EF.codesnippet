@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>class &lt;#modelName#&gt;: TKNetBaseModel {
+	<string>class &lt;#modelName#&gt;: LYBaseViewModel {
 
 var data = []()
 private var callBack: (([]) -&gt; Void)?
@@ -19,15 +19,6 @@ private var callBack: (([]) -&gt; Void)?
 // MARK: - ********* request and response
 extension &lt;#modelName#&gt; {
 
-}
-
-
-// MARK: - ********* model data
-@objcMembers
-class &lt;#modelData#&gt;: NSObject {
-
-/// aaa
-var aaa = ""
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>0A43EAE1-EE67-437E-90C4-8261A9A0C5EF</string>
