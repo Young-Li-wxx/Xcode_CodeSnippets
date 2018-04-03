@@ -18,7 +18,7 @@
             $0.textColor = &lt;#value#&gt;
             $0.tintColor = &lt;#value#&gt;
             $0.delegate = self
-            $0.attributedPlaceholder = "&lt;#value#&gt;".ly_AttributeStr(font: &lt;#font#&gt;, color: &lt;#color#&gt;)
+            $0.attributedPlaceholder = "&lt;#value#&gt;".ly.attributeStr(font: &lt;#font#&gt;, color: &lt;#color#&gt;)
             self.addSubview($0)
         }</string>
 	<key>IDECodeSnippetIdentifier</key>

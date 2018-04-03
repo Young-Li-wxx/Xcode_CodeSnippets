@@ -33,41 +33,21 @@ fileprivate func p_startNetWorkRequest() {
 // MARK: - ********* UIResponse Funcs
 extension &lt;#ClassName#&gt; {
     // MARK: === 点击左上角
-    @objc fileprivate func p_actionLeft() {
+    override func p_actionLeft() {
         
     }
     // MARK: === 点击右上角
-    @objc fileprivate func p_actionRight() {
+    override func p_actionRight() {
         
     }
 }
 
 // MARK: - ********* UI init
 extension &lt;#ClassName#&gt; {
-    private func p_setUpNav() {
-        self.navigationItem.title = ""
-        
-        let navSpacer = UIBarButtonItem.init(barButtonSystemItem: .fixedSpace, target: self, action: #selector(p_actionLeft))
-        let left = UIButton.init(type: .custom)
-        left.frame = CGRect.init(x: 0, y: 0, width: 44, height: 44)
-        left.setImage(UIImage.init(named: ""), for: .normal)
-        left.setImage(UIImage.init(named: "")?.ly_image(tintColor: UIColor.init(white: 0, alpha: 0.5)), for: .highlighted)
-        left.contentHorizontalAlignment = UIControlContentHorizontalAlignment.left
-        left.addTarget(self, action: #selector(p_actionLeft), for: .touchUpInside)
-        let leftItem = UIBarButtonItem.init(customView: left)
-        self.navigationItem.leftBarButtonItems = [navSpacer,leftItem]
-        
-        let right = UIButton.init(type: .custom)
-        right.frame = CGRect.init(x: 0, y: 0, width: 44, height: 44)
-        right.setImage(UIImage.init(named: ""), for: .normal)
-        right.setImage(UIImage.init(named: ""), for: .highlighted)
-        right.contentHorizontalAlignment = .right
-        right.addTarget(self, action: #selector(p_actionRight), for: .touchUpInside)
-        let rightItem = UIBarButtonItem.init(customView: right)
-        self.navigationItem.rightBarButtonItem = rightItem
-    }
+ 
     fileprivate func p_initSubviews() {
-        p_setUpNav()
+        self.navigationItem.title = ""
+
     }
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
