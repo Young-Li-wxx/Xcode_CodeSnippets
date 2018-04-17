@@ -46,7 +46,7 @@ extension &lt;#ClassName#&gt; {
 extension &lt;#ClassName#&gt; {
  
     fileprivate func p_initSubviews() {
-        self.navigationItem.title = ""
+        self.navBar.title = ""
 
     }
 }</string>

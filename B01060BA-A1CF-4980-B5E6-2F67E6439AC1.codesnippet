@@ -3,23 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>p_initSubviews</string>
+	<string>sw_v_action</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>fileprivate func p_initSubviews() {
-        
-
-    }
-</string>
+	<string>var action&lt;#act#&gt;: ((&lt;#param#&gt;) -&gt; Void)?</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>B2E087F3-D7E4-4E6F-BE06-F705654B01A5</string>
+	<string>B01060BA-A1CF-4980-B5E6-2F67E6439AC1</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>p_initSubviews</string>
+	<string>var action: (() -&gt; Void)?</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
