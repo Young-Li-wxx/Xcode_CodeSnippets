@@ -9,18 +9,20 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> scrollView = UIScrollView.init(frame: CGRect.init(x: &lt;#T##CGFloat#&gt;, y: &lt;#T##CGFloat#&gt;, width: &lt;#T##CGFloat#&gt;, height: &lt;#T##CGFloat#&gt;))
-        scrollView.showsVerticalScrollIndicator = false
-        scrollView.showsHorizontalScrollIndicator = false
-        scrollView.delegate = self
-        scrollView.backgroundColor = UIColor.white
-        &lt;#superView#&gt;.addSubview(scrollView)</string>
+	<string>&lt;#object#&gt; = UIScrollView().then {
+    $0.frame = CGRect(x: &lt;#T##CGFloat#&gt;, y: &lt;#T##CGFloat#&gt;, width: &lt;#T##CGFloat#&gt;, height: &lt;#T##CGFloat#&gt;)
+    $0.backgroundColor = UIColor.white
+    $0.showsVerticalScrollIndicator = false
+    $0.showsHorizontalScrollIndicator = false
+    $0.delegate = self
+    self.addSubview($0)
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>A553A2A3-A952-4A6E-9173-0D61F09ED23C</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>scrollview quick init</string>
+	<string>scrollview 快速初始化</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
