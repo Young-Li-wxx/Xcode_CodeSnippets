@@ -10,6 +10,10 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string> static let cellReuseId = "&lt;#CellClass#&gt;"
+ static let cellHeight = &lt;#height#&gt;
+ private var cHeight: CGFloat {
+    return &lt;#CellClass#&gt;.cellHeight
+ }
     class func cellWithTableView(_ tableView: UITableView, indexPath: IndexPath) -&gt; &lt;#CellClass#&gt; {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseId, for: indexPath) as? &lt;#CellClass#&gt; else {
@@ -33,7 +37,7 @@ extension &lt;#Class#&gt; {
         self.backgroundColor = UIColor.white
         self.selectionStyle = .none
         
-        let line = UIView(frame: CGRect(x: kFitRWid(15), y: 100 - 1, width: kScreenWid() - kFitRWid(15) * 2, height: 1))
+        line = UIView(frame: CGRect(x: kFitRWid(15), y: cHeight - 1, width: kScreenWid() - kFitRWid(15) * 2, height: 1))
         line.backgroundColor = kSeparateLineColor()
         self.contentView.addSubview(line)
     }

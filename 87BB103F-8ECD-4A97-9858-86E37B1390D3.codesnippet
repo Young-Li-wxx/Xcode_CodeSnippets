@@ -9,11 +9,10 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>extension &lt;#Class#&gt; {
-    @objc fileprivate func p_actionBtn() {
-    
-    }
-}</string>
+	<string>@objc private func p_actionBtn() {
+
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>87BB103F-8ECD-4A97-9858-86E37B1390D3</string>
 	<key>IDECodeSnippetLanguage</key>

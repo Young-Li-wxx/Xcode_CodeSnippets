@@ -26,7 +26,7 @@
 // MARK: - ********* Network
 extension &lt;#Class#&gt; {
 // MARK: === 数据请求
-fileprivate func p_startNetWorkRequest() {
+private func p_startNetWorkRequest() {
     
 }
 }
@@ -45,7 +45,7 @@ extension &lt;#ClassName#&gt; {
 // MARK: - ********* UI init
 extension &lt;#ClassName#&gt; {
  
-    fileprivate func p_initSubviews() {
+    private func p_initSubviews() {
         self.navigationItem.title = ""
 
     }
