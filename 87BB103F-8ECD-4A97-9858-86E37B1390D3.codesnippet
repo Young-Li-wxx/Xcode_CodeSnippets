@@ -9,8 +9,8 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@objc private func p_actionBtn() {
-
+	<string>@objc private func p_actionBtns(btn: UIButton) {
+    
 }
 </string>
 	<key>IDECodeSnippetIdentifier</key>

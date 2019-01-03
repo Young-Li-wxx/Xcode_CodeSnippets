@@ -3,26 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>lyTextFieldInit</string>
+	<string>guardModelExist</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>&lt;#object#&gt; = LYTextField.init(frame: &lt;#T##CGRect#&gt;, maxLenth: &lt;#T##Int#&gt;)
-&lt;#object#&gt;.do {
-$0.font = &lt;#value#&gt;
-$0.textColor = &lt;#value#&gt;
-$0.delegate = self
-$0.attributedPlaceholder = "&lt;#value#&gt;".ly.attributeStr(font: &lt;#font#&gt;, color: &lt;#color#&gt;)
-self.addSubview($0)
-}</string>
+	<string>guard let m = model else { return }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>F2CEDC4E-8299-4EBC-908C-B1182670BDB9</string>
+	<string>4D23BFCA-5626-4365-9271-68BC3F3C79AB</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>guard model exist</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UITextField 快速初始化</string>
+	<string>guard model</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

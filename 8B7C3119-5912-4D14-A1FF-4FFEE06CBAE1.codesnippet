@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>lyRefreshTableViewQuickInit</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>tableView = LYRefreshTableView.init(frame: CGRect.init(x: 0, y: kNavBottom(), width: kScreenWid(), height: kScreenHei() - kNavBottom()), style: .plain)
+        tableView.do {
+            $0.backgroundColor = UIColor.white
+            $0.setDataDelegateVM(vm)
+            self.view.addSubview($0)
+        }
+        tableView.addHeaderFooterRefresh()
+        tableView.addEmpty(tipStr: "")
+        tableView.addError()
+        
+/// cell click
+vm.vmDidSelectCell = { [weak self](cell, _, _ )in
+    self?.p_actionUserIcon(cell: cell)
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8B7C3119-5912-4D14-A1FF-4FFEE06CBAE1</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>RefreshTableView - Qcick Init</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
