@@ -10,9 +10,10 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>// MARK: - ********* Public method
-extension &lt;#Some#&gt; {
+public extension &lt;#Some#&gt; {
 
-}</string>
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>732AFA69-0F32-4B34-99D0-64653FB458FB</string>
 	<key>IDECodeSnippetLanguage</key>
