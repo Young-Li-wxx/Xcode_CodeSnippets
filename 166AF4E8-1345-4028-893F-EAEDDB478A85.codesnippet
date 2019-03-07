@@ -3,53 +3,56 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>swControllerInit</string>
+	<string>lyControllerInit</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// MARK: view cycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.p_initSubviews()
-        self.p_startNetWorkRequest()
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-    }
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-    }
+	<string>extension &lt;#Class#&gt;: Routable {
+static func initWithParams(params: RouterParam?) -&gt; UIViewController? {
+    guard let data = params?["data"] as? &lt;#contructData#&gt; else {
+    d_print("error init \(self) by illegal params")
+    return nil
 }
-// MARK: - ********* Network
-extension &lt;#Class#&gt; {
-// MARK: === 数据请求
-private func p_startNetWorkRequest() {
+return &lt;#Class#&gt;(conData: data)
+}
+}
+
+
+final class &lt;#Class#&gt;: HTBaseVC {
+
+private var conData: GuideSignRData
+init(conData: GuideSignRData) {
+    self.conData = conData
+}
+/// subviews
+
+
+override func loadView() {
+    super.loadView()
+    p_loadSubViews()
+}
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    self.navigationItem.title = "&lt;#Title#&gt;".localized()
+    
+    /// init vm
+    
     
 }
 }
-// MARK: - ********* UIResponse Funcs
-extension &lt;#ClassName#&gt; {
-    // MARK: === 点击左上角
-    override func p_actionLeft() {
-        
-    }
-    // MARK: === 点击右上角
-    override func p_actionRight() {
-        
-    }
+
+
+extension &lt;#Class#&gt; {
+
+func p_loadSubViews() {
+    
+    
 }
-
-// MARK: - ********* UI init
-extension &lt;#ClassName#&gt; {
- 
-    private func p_initSubviews() {
-        self.navigationItem.title = ""
-
-    }
-}</string>
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>166AF4E8-1345-4028-893F-EAEDDB478A85</string>
 	<key>IDECodeSnippetLanguage</key>

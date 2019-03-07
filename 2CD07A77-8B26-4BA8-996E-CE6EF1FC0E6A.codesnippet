@@ -3,23 +3,37 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>imRxSwift</string>
+	<string>niblessView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>import RxCocoa
-import RxSwift
-import RxDataSources
-import Localize_Swift
+	<string>class &lt;#View#&gt;: HTNiblessView {
+    
+    private var &lt;#var#&gt;: &lt;#Class#&gt;!
+    private var &lt;#var#&gt;: &lt;#Class#&gt;!
+    private var &lt;#var#&gt;: &lt;#Class#&gt;!
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        func p_loadSubView()
+    }
+}
+
+private extension &lt;#View#&gt; {
+    
+    func p_loadSubView() {
+        
+    }
+}
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>905D85BB-C22B-4C2A-9FCD-79F126E42B19</string>
+	<string>2CD07A77-8B26-4BA8-996E-CE6EF1FC0E6A</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>import RxSwift</string>
+	<string>quick Nibless View</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

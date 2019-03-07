@@ -9,16 +9,20 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>extension &lt;#CellClass#&gt;: LYCellInitProtocol {
-    
-    typealias T = &lt;#CellClass#&gt;
-    static var cellReuseId: String { return "&lt;#CellClass#&gt;" }
-    private var cHeight: CGFloat { return &lt;#CellClass#&gt;.cellHeight }
-    static var cellHeight: CGFloat { return &lt;#cellHeight#&gt;}
-}
+	<string>extension &lt;#CellClass#&gt; {
 
-final class &lt;#CellClass#&gt;: UITableViewCell {
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+static func cell(withTableView tableView: UITableView, indexPath: IndexPath) -&gt; &lt;#CellClass#&gt; {
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseId, for: indexPath) as? &lt;#CellClass#&gt; else {
+    return &lt;#CellClass#&gt;(style: .default, reuseIdentifier: cellReuseId)
+};  return cell
+}
+static var cellReuseId: String { return "&lt;#CellClass#&gt;" }
+private var cHeight: CGFloat { return &lt;#CellClass#&gt;.cellHeight }
+    static var cellHeight: CGFloat { return &lt;#cellHeight#&gt;}
+    }
+    
+    final class &lt;#CellClass#&gt;: UITableViewCell {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         p_initSubViews()
     }
@@ -27,18 +31,23 @@ final class &lt;#CellClass#&gt;: UITableViewCell {
     }
     
     private(set) var line: UIView!
+    
+    var model = &lt;#CellModelType#&gt;() {
+    didSet {
+        
+    }
+}
 }
 
 extension &lt;#CellClass#&gt; {
-    fileprivate func p_initSubViews() {
-        self.backgroundColor = UIColor.white
-        self.selectionStyle = .none
-        
-        line = UIView(frame: CGRect(x: kFitRWid(15), y: cHeight - 1, width: kScreenWid() - kFitRWid(15) * 2, height: 1))
-        line.backgroundColor = kSeparateLineColor()
-        self.contentView.addSubview(line)
-    }
-}</string>
+fileprivate func p_initSubViews() {
+    self.backgroundColor = UIColor.white
+    self.selectionStyle = .none
+    
+    
+}
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>CBD855A5-2A6C-4EFF-8675-9828338E25AA</string>
 	<key>IDECodeSnippetLanguage</key>

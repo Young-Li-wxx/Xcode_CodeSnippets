@@ -10,11 +10,15 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>&lt;#object#&gt; = UIImageView().then {
-            $0.frame = CGRect(x: &lt;#T##CGFloat#&gt;, y: &lt;#T##CGFloat#&gt;, width: &lt;#T##CGFloat#&gt;, height: &lt;#T##CGFloat#&gt;)
-            $0.backgroundColor = UIColor.white
-            $0.contentMode = .center
-            self.addSubview($0)
-        }</string>
+$0.backgroundColor = UIColor.placeholder
+$0.contentMode = .scaleAspectFill
+$0.clipsToBounds = true
+}.add(toSuperView: &lt;#superView#&gt;)
+&lt;#object#&gt;.snp.makeConstraints { (m) in
+m.&lt;#constraints#&gt;
+m.&lt;#constraints#&gt;
+m.&lt;#constraints#&gt;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>DF854706-9C6D-47C8-BA9D-CD2A1446CF3C</string>
 	<key>IDECodeSnippetLanguage</key>
