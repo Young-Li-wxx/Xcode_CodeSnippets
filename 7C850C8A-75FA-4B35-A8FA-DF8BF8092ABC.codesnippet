@@ -9,9 +9,14 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>let line = UIView(frame: CGRect(x: &lt;#T##CGFloat#&gt;, y: &lt;#T##CGFloat#&gt;, width: &lt;#T##CGFloat#&gt;, height: &lt;#T##CGFloat#&gt;))
-        line.backgroundColor = kSeparateLineColor()
-        &lt;#superView#&gt;.addSubview(line)</string>
+	<string>line = UIView().then {
+    $0.backgroundColor = UIColor.separateLine
+    }.add(toSuperView: &lt;#superView#&gt;)
+line.snp.makeConstraints({ (m) in
+    m.height.equalTo(1)
+    m.left.right.equalToSuperview().inset(17.fitR)
+    m.bottom.equalToSuperview()
+})</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>7C850C8A-75FA-4B35-A8FA-DF8BF8092ABC</string>
 	<key>IDECodeSnippetLanguage</key>
