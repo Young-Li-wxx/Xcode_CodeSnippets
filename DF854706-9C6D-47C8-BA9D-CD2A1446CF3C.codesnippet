@@ -13,12 +13,7 @@
 $0.backgroundColor = UIColor.placeholder
 $0.contentMode = .scaleAspectFill
 $0.clipsToBounds = true
-}.add(toSuperView: &lt;#superView#&gt;)
-&lt;#object#&gt;.snp.makeConstraints { (m) in
-m.&lt;#constraints#&gt;
-m.&lt;#constraints#&gt;
-m.&lt;#constraints#&gt;
-}</string>
+}.add(toSuperView: &lt;#superView#&gt;)</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>DF854706-9C6D-47C8-BA9D-CD2A1446CF3C</string>
 	<key>IDECodeSnippetLanguage</key>

@@ -15,12 +15,7 @@ $0.textAlignment = .left
 $0.textColor = &lt;#value#&gt;
 $0.font = &lt;#value#&gt;
 $0.text = &lt;#value#&gt;
-}.add(toSuperView: &lt;#superView#&gt;)
-&lt;#object#&gt;.snp.makeConstraints { (m) in
-m.&lt;#constraints#&gt;
-m.&lt;#constraints#&gt;
-m.&lt;#constraints#&gt;
-}</string>
+}.add(toSuperView: &lt;#superView#&gt;)</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>9B7B9C0E-7933-41D9-86FA-F42D8F98482C</string>
 	<key>IDECodeSnippetLanguage</key>

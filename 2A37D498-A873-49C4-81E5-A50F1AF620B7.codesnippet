@@ -18,6 +18,7 @@ $0.setTitle(&lt;#T##title: String?##String?#&gt;, for: .normal)
 $0.setTitleColor(&lt;#T##color: UIColor?##UIColor?#&gt;, for: .normal)
 $0.isAnimationZoomIn = true
 $0.isAlphaHalfWhenHlight = true
+$0.addTarget(&lt;#T##target: Any?##Any?#&gt;, action: #selector(&lt;#selector#&gt;), for: .touchUpInside)
 }.add(toSuperView: &lt;#T##UIView#&gt;)</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>2A37D498-A873-49C4-81E5-A50F1AF620B7</string>
