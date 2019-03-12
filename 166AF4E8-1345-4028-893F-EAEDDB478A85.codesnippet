@@ -11,14 +11,11 @@
 	<key>IDECodeSnippetContents</key>
 	<string>extension &lt;#Class#&gt;: Routable {
 static func initWithParams(params: RouterParam?) -&gt; UIViewController? {
-    guard let data = params?["data"] as? &lt;#contructData#&gt; else {
-    d_print("error init \(self) by illegal params")
-    return nil
-}
-return &lt;#Class#&gt;(conData: data)
+    guard let data = params?["data"] as? &lt;#contructData#&gt;
+    else { d_print("error init \(self) by illegal params"); return nil }
+    return &lt;#Class#&gt;(conData: data)
 }
 }
-
 
 final class &lt;#Class#&gt;: HTBaseVC {
 
