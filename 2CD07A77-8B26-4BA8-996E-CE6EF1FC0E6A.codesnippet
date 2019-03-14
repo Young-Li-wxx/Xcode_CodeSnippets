@@ -18,6 +18,7 @@
     override init(frame: CGRect) {
         super.init(frame: frame)
         p_loadSubView()
+        p_setupConstraints()
     }
 }
 
@@ -30,7 +31,9 @@ private extension &lt;#Class#&gt; {
 
 // MARK: - ********* LoadSubviews &amp; SetupConstraints
 private extension &lt;#View#&gt; {
-    
+    func p_setupConstraints() {
+        
+    }
     func p_loadSubView() {
         
     }

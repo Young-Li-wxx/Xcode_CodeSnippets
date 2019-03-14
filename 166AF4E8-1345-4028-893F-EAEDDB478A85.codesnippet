@@ -29,6 +29,7 @@ init(conData: GuideSignRData) {
 override func loadView() {
     super.loadView()
     p_loadSubViews()
+    p_setupConstraints()
 }
 
 override func viewDidLoad() {
@@ -41,15 +42,23 @@ override func viewDidLoad() {
 }
 }
 
-
+// MARK: - ********* Private Actions
 extension &lt;#Class#&gt; {
 
+
+}
+
+// MARK: - ********* LoadSubviews &amp; SetupConstraints
+extension &lt;#Class#&gt; {
+func p_setupConstraints() {
+    
+    
+}
 func p_loadSubViews() {
     
     
 }
-}
-</string>
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>166AF4E8-1345-4028-893F-EAEDDB478A85</string>
 	<key>IDECodeSnippetLanguage</key>
