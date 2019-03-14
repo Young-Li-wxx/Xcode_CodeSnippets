@@ -11,12 +11,12 @@
 	<key>IDECodeSnippetContents</key>
 	<string>line = UIView().then {
     $0.backgroundColor = UIColor.separateLine
-    }.add(toSuperView: &lt;#superView#&gt;)
-line.snp.makeConstraints({ (m) in
+    }.add(toSuperView: self)
+line.snp.makeConstraints { (m) in
+    m.left.right.bottom.equalToSuperview()
     m.height.equalTo(1)
-    m.left.right.equalToSuperview().inset(17.fitR)
-    m.bottom.equalToSuperview()
-})</string>
+}
+        </string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>7C850C8A-75FA-4B35-A8FA-DF8BF8092ABC</string>
 	<key>IDECodeSnippetLanguage</key>
