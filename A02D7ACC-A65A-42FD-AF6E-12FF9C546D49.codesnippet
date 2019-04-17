@@ -11,9 +11,9 @@
 	<key>IDECodeSnippetContents</key>
 	<string>public class &lt;#Class#&gt;: BaseModel {
     
-    var &lt;#var#&gt; = ""
-    var &lt;#var#&gt; = ""
-    var &lt;#var#&gt; = ""
+    public var &lt;#var#&gt; = ""
+    public var &lt;#var#&gt; = ""
+    public var &lt;#var#&gt; = ""
     
     required init() { }
 }</string>

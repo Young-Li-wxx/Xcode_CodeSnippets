@@ -3,26 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>lyTextFieldInit</string>
+	<string>lyTextViewInit</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>&lt;#object#&gt; = LYTextField.init(frame: .zero, maxLenth: 100)
+	<string>let placeHolder = "&lt;#placeholder#&gt;".ht.attributeStr(font: &lt;#T##UIFont#&gt;, color: &lt;#T##UIColor#&gt;)
+&lt;#var#&gt; = HTTextView(frame: .zero, placeholder: placeHolder)
 .then {
-    $0.font = &lt;#value#&gt;
-    $0.textColor = &lt;#value#&gt;
-    $0.delegate = self
-    $0.attributedPlaceholder = "&lt;#value#&gt;"
-    .ht.attributeStr(font: &lt;#font#&gt;, color: &lt;#color#&gt;)
-    }.add(toSuperView: &lt;#UIView#&gt;)</string>
+            $0.font = &lt;#value#&gt;
+            $0.textColor = &lt;#value#&gt;
+            $0.delegate = self
+            $0.returnKeyType = .done
+            $0.autocapitalizationType = .none
+            }.add(toSuperView: &lt;#UIView#&gt;)</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>F2CEDC4E-8299-4EBC-908C-B1182670BDB9</string>
+	<string>DCD9AC36-9CA2-44B3-A14B-0213FF556D4E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UITextField 快速初始化</string>
+	<string>TextView Quick Init</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

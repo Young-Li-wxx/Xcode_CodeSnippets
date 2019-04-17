@@ -24,7 +24,9 @@ init(conData: GuideSignRData) {
     self.conData = conData
 }
 /// subviews
-
+private var &lt;#var#&gt;: &lt;#Class#&gt;!
+private var &lt;#var#&gt;: &lt;#Class#&gt;!
+private var &lt;#var#&gt;: &lt;#Class#&gt;!
 
 override func loadView() {
     super.loadView()

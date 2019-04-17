@@ -10,10 +10,11 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>/// &lt;#desc1#&gt;
-    ///
-    /// - Parameter &lt;#param#&gt;: &lt;#paramDesc#&gt;
-    /// - Parameter &lt;#param#&gt;: &lt;#paramDesc#&gt;
-    /// - Returns: &lt;#returnDesc#&gt;</string>
+///
+/// - Parameters:
+///   - &lt;#param#&gt;: &lt;#paramDesc#&gt;
+///   - &lt;#param#&gt;: &lt;#paramDesc#&gt;
+/// - Returns: &lt;#returnDesc#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>91298DE0-3884-4834-B912-B0A865CE532E</string>
 	<key>IDECodeSnippetLanguage</key>
