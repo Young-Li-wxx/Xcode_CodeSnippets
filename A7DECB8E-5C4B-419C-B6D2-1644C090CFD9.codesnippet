@@ -9,15 +9,16 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>//  打印系统所有字体
-        let familyArr = UIFont.familyNames
-        for family in familyArr {
-            d_print("======  FamilyName : \(family) ======")
-            let fontArr = UIFont.fontNames(forFamilyName: family)
-            for idx in 0 ..&lt; fontArr.count {
-                d_print("=== \(idx + 1).  \(fontArr[idx])")
-            }
-        }</string>
+	<string>/// 打印系统所有字体
+let familyArr = UIFont.familyNames
+for family in familyArr {
+    d_print("======  FamilyName : \(family) ======")
+    let fontArr = UIFont.fontNames(forFamilyName: family)
+    for idx in 0 ..&lt; fontArr.count {
+        d_print("=== \(idx + 1).  \(fontArr[idx])")
+    }
+    d_print(" ")
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>A7DECB8E-5C4B-419C-B6D2-1644C090CFD9</string>
 	<key>IDECodeSnippetLanguage</key>
