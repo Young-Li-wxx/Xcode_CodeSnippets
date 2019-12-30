@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>RF-CreateViewModel</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>import Foundation
+import ReactiveSwift
+import EikonModel
+import EikonAPIClient
+import EikonUI
+import EikonComponents
+
+
+protocol &lt;#ViewModelClassName#&gt;ViewModelType {
+    var input: &lt;#ViewModelClassName#&gt;ViewModelInput { get }
+    var output: &lt;#ViewModelClassName#&gt;ViewModelOutput { get }
+}
+
+protocol &lt;#ViewModelClassName#&gt;ViewModelInput {
+    func start()
+    
+}
+
+protocol &lt;#ViewModelClassName#&gt;ViewModelOutput {
+    var &lt;#Signal1#&gt;: Signal&lt;&lt;#Signal1Type#&gt;, Never&gt; { get }
+    var &lt;#Signal2#&gt;: Signal&lt;&lt;#Signal2Type#&gt;, Never&gt; { get }
+    var errorMessage: Signal&lt;Error, Never&gt; { get }
+}
+
+final class &lt;#ViewModelClassName#&gt;ViewModel {
+    
+    
+    
+}
+
+
+extension &lt;#ViewModelClassName#&gt;ViewModel: &lt;#ViewModelClassName#&gt;ViewModelInput {
+    func start() {
+        
+        
+    }
+}
+
+extension &lt;#ViewModelClassName#&gt;ViewModel: &lt;#ViewModelClassName#&gt;ViewModelOutput { }
+
+
+extension &lt;#ViewModelClassName#&gt;ViewModel: &lt;#ViewModelClassName#&gt;ViewModelType {
+    var input: &lt;#ViewModelClassName#&gt;ViewModelInput {
+        return self
+    }
+    var output: &lt;#ViewModelClassName#&gt;ViewModelOutput {
+        return self
+    }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>914A0DC4-B19F-4DD5-8110-EB8B590A0024</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Refinitiv-Standard ViewModel</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
