@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ly-view-quickinit</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>final class &lt;#CustomView#&gt;: BaseView {
+
+    private let sub1 = UIView()
+    private let sub2 = UILabel()
+    private let sub3 = UIImageView()
+
+    override init(frame: CGRect) {
+        super.init(frame: .zero)
+
+        setupLayout()
+        setupStyle()
+        setupReavtive()
+    }
+    
+}
+
+extension &lt;#CustomView#&gt; {
+
+    func setupValue() {
+        
+    }
+    
+    func setupReavtive() {
+        
+        
+    }
+    
+    @objc func action() {
+        
+    }
+}
+
+extension &lt;#CustomView#&gt; {
+    
+    func setupLayout() {
+        
+    }
+    
+    func setupStyle() {
+        
+    }
+}
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6A696E99-14CE-4AAB-B20C-34B5ED6D69C2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>view快速初始化</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>quick-view-init</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

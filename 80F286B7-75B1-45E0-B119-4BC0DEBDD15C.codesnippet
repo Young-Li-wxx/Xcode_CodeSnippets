@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ly-vc-quickinit</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>struct TargetParam: RouterParam {
+    let navTitle: String
+    let editorType: FormComponentsEditorSourceType
+    let isEditEnabled: Bool
+}
+
+extension TargetViewController: Routable {
+    static func initWithRouter(params: RouterParam?) -&gt; UIViewController? {
+        guard let data = params as? TargetParam
+        else { k_log("🔴 error init \(self) by illegal params"); return nil }
+        return TargetViewController(initData: data)
+    }
+}
+
+final class TargetViewController: BaseViewController {
+    
+    private let initData: TargetParam
+    
+    init(initData: TargetParam) {
+        self.initData = initData
+        //        self.viewModel =
+    }
+    
+    private let view1 = UIView()
+    private let view2 = UIView()
+    
+    private let tableView = YCRefreshTableView()
+    private let viewModel: TargetViewModel
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupLayout()
+        setupStyle()
+        setupReactive()
+    }
+}
+
+extension TargetViewController {
+    
+    func setupReactive() {
+        
+        
+    }
+    
+    @objc func action() {
+        
+    }
+}
+
+// MARK: - tableView UITableViewDataSource、UITableViewDelegate
+extension TargetViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int {
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {
+        
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+}
+
+extension TargetViewController {
+    
+    func setupLayout() {
+        
+        
+        tableView.snp.makeConstraints { (m) in
+            m.top.equalTo(kNavBtm)
+            m.leading.bottom.trailing.equalToSuperview()
+        }
+    }
+    
+    func setupStyle() {
+        
+        navBar.title = &lt;#NavigationBar title#&gt;
+        
+        tableView.do { (v) in
+            v.backgroundColor = .color(.common(.white))
+            v.rowHeight = 280.fitR
+            v.delegate = self
+            v.dataSource = self
+            v.setRefreshVM(viewModel)
+            v.addError()
+            v.addEmpty(tipStr: "暂无数据")
+            v.register(&lt;#T##nib: UINib?##UINib?#&gt;, forCellReuseIdentifier: &lt;#T##String#&gt;)
+        }
+    }
+}
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>80F286B7-75B1-45E0-B119-4BC0DEBDD15C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>ViewController快速初始化</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>quick-viewController-init</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
